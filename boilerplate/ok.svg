@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+    <rect width="256" height="256" fill="none"/>
+    <rect x="16" y="16" width="224" height="224" rx="32" ry="32" fill="#F6C51A" stroke="#fff" stroke-width="16"/>
+    <text x="118" y="120" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="98" letter-spacing="0.05em" font-weight="bold" fill="#fff">OK</text>
+    <text x="128" y="203" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="98" letter-spacing="0.02em" font-weight="bold" fill="#000">&lt;JS</text>
+</svg>

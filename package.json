@@ -1,0 +1,28 @@
+{
+  "name": "@kedem/okjs",
+  "version": "1.2.7",
+  "license": "SEE LICENSE IN LICENSE",
+  "type": "module",
+  "main": "dist/ok.esm.js",
+  "module": "dist/ok.esm.js",
+  "exports": {
+    ".": "./dist/ok.esm.js",
+    "./toolkit": "./toolkit/index.js",
+    "./*": "./*"
+  },
+  "bin": {
+    "okjs": "./bin/okjs.js",
+    "okjs-server": "./bin/okjs.js"
+  },
+  "web-types": "web-types.json",
+  "files": [
+    "dist",
+    "bin",
+    "boilerplate",
+    "dev/server",
+    "index.d.ts",
+    "web-types.json",
+    "ok.svg"
+  ],
+  "private": false
+}
