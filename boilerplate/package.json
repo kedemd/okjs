@@ -1,0 +1,12 @@
+{
+    "name": "my-ok-app",
+    "version": "0.0.1",
+    "type": "module",
+    "scripts": {
+        "dev": "okjs serve --hmr",
+        "build": "okjs serve --ssg --minify"
+    },
+    "dependencies": {
+        "@kedem/okjs": "^1.2.6"
+    }
+}
