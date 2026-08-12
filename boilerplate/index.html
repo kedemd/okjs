@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OK App</title>
+    <base href="./">
+    <link rel="icon" href="ok.svg" type="image/svg+xml">
+    <script type="importmap">
+    {
+        "imports": {
+            "@kedem/okjs": "/node_modules/@kedem/okjs/dist/ok.esm.js",
+            "@kedem/okjs/toolkit": "/node_modules/@kedem/okjs/toolkit/manifest.js",
+            "@kedem/okjs/": "/node_modules/@kedem/okjs/"
+        }
+    }
+    </script>
+</head>
+<body>
+    <component import="./app.ok.js"></component>
+    <script type="module" src="./bootstrap.js"></script>
+</body>
+</html>
+
+
