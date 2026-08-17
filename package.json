@@ -1,0 +1,40 @@
+{
+  "name": "@kedem/okjs",
+  "version": "1.2.23",
+  "license": "SEE LICENSE IN LICENSE",
+  "type": "module",
+  "main": "dist/ok.esm.js",
+  "module": "dist/ok.esm.js",
+  "exports": {
+    ".": "./dist/ok.esm.js",
+    "./toolkit": "./dist/toolkit/manifest.js",
+    "./toolkit/*": "./dist/toolkit/*",
+    "./tooling": {
+      "types": "./src/tooling/index.d.ts",
+      "import": "./src/tooling/index.js",
+      "default": "./src/tooling/index.js"
+    },
+    "./*": "./*"
+  },
+  "bin": {
+    "okjs": "./bin/okjs.js",
+    "okjs-server": "./bin/okjs.js"
+  },
+  "web-types": "web-types.json",
+  "files": [
+    "dist",
+    "bin",
+    "boilerplate",
+    "dev/server",
+    "index.d.ts",
+    "web-types.json",
+    "ok.svg",
+    "src/tooling",
+    "src/syntax",
+    "src/runtime/ok-import-resolution.js"
+  ],
+  "dependencies": {
+    "acorn": "^8.18.0"
+  },
+  "private": false
+}
