@@ -1,0 +1,363 @@
+<script type="module">
+    export default { 
+        tag: 'about-page',
+        context() {
+            return {
+                profile: {
+                    name: 'Admin User',
+                    email: 'admin@okjs.app',
+                    role: 'Administrator',
+                    notifications: true,
+                    marketing: false,
+                    language: 'en'
+                },
+                saveProfile() {
+                    console.log('Saved profile:', this.profile);
+                    alert('Profile settings saved successfully!');
+                }
+            };
+        }
+    };
+</script>
+<template>
+    <div class="page-container">
+        <header class="page-header">
+            <h1 class="page-title">Profile Settings</h1>
+            <p class="page-subtitle">Manage your account preferences and details.</p>
+        </header>
+        <div class="settings-grid">
+            <div class="settings-card">
+                <h2 class="card-title">Personal Information</h2>
+                <form class="settings-form" @submit:prevent="saveProfile()">
+                    <div class="form-group">
+                        <label class="form-label" for="name">Full Name</label>
+                        <input class="form-input" id="name" type="text" !profile.name />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email Address</label>
+                        <input class="form-input" id="email" type="email" !profile.email />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="language">Language</label>
+                        <select class="form-input" id="language" !profile.language>
+                            <option value="en">English (US)</option>
+                            <option value="es">Espa?ol</option>
+                            <option value="fr">Fran?ais</option>
+                            <option value="de">Deutsch</option>
+                        </select>
+                    </div>
+                    <div class="form-separator"></div>
+                    <h2 class="card-title" style="margin-top: 1.5rem">Preferences</h2>
+                    <div class="toggle-group">
+                        <label class="toggle-label">
+                            <input type="checkbox" class="toggle-input" !profile.notifications />
+                            <span class="toggle-track"></span>
+                            <div class="toggle-text">
+                                <strong>System Notifications</strong>
+                                <span>Receive updates about your account activity.</span>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="toggle-group">
+                        <label class="toggle-label">
+                            <input type="checkbox" class="toggle-input" !profile.marketing />
+                            <span class="toggle-track"></span>
+                            <div class="toggle-text">
+                                <strong>Marketing Emails</strong>
+                                <span>We won't spam you, promise.</span>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+            <div class="profile-preview">
+                <div class="preview-card">
+                    <div class="preview-header"></div>
+                    <div class="preview-avatar">
+                        {{ profile.name ? profile.name.charAt(0).toUpperCase() : '?' }}
+                    </div>
+                    <div class="preview-body">
+                        <h3 class="preview-name">{{ profile.name || 'Anonymous' }}</h3>
+                        <p class="preview-role">{{ profile.role }}</p>
+                        <div class="preview-details">
+                            <div class="preview-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                <span>{{ profile.email || 'No email provided' }}</span>
+                            </div>
+                            <div class="preview-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                                <span>Language: {{ profile.language.toUpperCase() }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hint-card">
+                    <svg class="hint-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                    <div>
+                        <strong>Two-way binding</strong>
+                        <p>Type in the form and watch the preview update instantly via the <code>!var</code> binding syntax.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+<style>
+    .page-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem 5rem;
+    }
+    .page-header {
+        margin-bottom: 2.5rem;
+    }
+    .page-title {
+        font-size: 1.875rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        letter-spacing: -0.025em;
+        margin-bottom: 0.5rem;
+    }
+    .page-subtitle {
+        color: var(--text-secondary);
+        font-size: 1.05rem;
+    }
+    .settings-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    @media (min-width: 768px) {
+        .settings-grid {
+            grid-template-columns: 3fr 2fr;
+        }
+    }
+    /* Cards */
+    .settings-card, .preview-card, .hint-card {
+        background: var(--surface-color);
+        border: 1px solid var(--border-color);
+        border-radius: 1rem;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    }
+    .settings-card {
+        padding: 2rem;
+    }
+    .card-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--text-primary);
+        margin-bottom: 1.5rem;
+    }
+    /* Form Elements */
+    .settings-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .form-label {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--text-primary);
+    }
+    .form-input {
+        padding: 0.625rem 0.875rem;
+        border: 1px solid var(--border-color);
+        border-radius: 0.5rem;
+        background-color: var(--bg-color);
+        color: var(--text-primary);
+        font-size: 0.95rem;
+        transition: all 0.2s;
+        font-family: inherit;
+    }
+    .form-input:focus {
+        outline: none;
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 3px var(--ring-color);
+    }
+    .form-separator {
+        height: 1px;
+        background-color: var(--border-color);
+        margin: 0.5rem 0;
+    }
+    /* Toggle Switch */
+    .toggle-group {
+        margin-bottom: 0.5rem;
+    }
+    .toggle-label {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        cursor: pointer;
+    }
+    .toggle-input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        position: absolute;
+    }
+    .toggle-track {
+        position: relative;
+        display: inline-block;
+        width: 2.75rem;
+        height: 1.5rem;
+        background-color: var(--border-color);
+        border-radius: 9999px;
+        transition: background-color 0.2s;
+        flex-shrink: 0;
+        margin-top: 0.1rem;
+    }
+    .toggle-track::after {
+        content: '';
+        position: absolute;
+        top: 0.125rem;
+        left: 0.125rem;
+        width: 1.25rem;
+        height: 1.25rem;
+        background-color: white;
+        border-radius: 50%;
+        transition: transform 0.2s;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    }
+    .toggle-input:checked + .toggle-track {
+        background-color: var(--primary-color);
+    }
+    .toggle-input:checked + .toggle-track::after {
+        transform: translateX(1.25rem);
+    }
+    .toggle-input:focus-visible + .toggle-track {
+        box-shadow: 0 0 0 2px var(--surface-color), 0 0 0 4px var(--ring-color);
+    }
+    .toggle-text {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    .toggle-text strong {
+        font-size: 0.95rem;
+        color: var(--text-primary);
+        font-weight: 500;
+    }
+    .toggle-text span {
+        font-size: 0.85rem;
+        color: var(--text-secondary);
+    }
+    .form-actions {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .btn-primary {
+        background-color: var(--primary-color);
+        color: white;
+        font-weight: 500;
+        padding: 0.625rem 1.5rem;
+        border-radius: 0.5rem;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        font-size: 0.95rem;
+    }
+    .btn-primary:hover {
+        background-color: var(--primary-hover);
+    }
+    /* Preview Profile */
+    .profile-preview {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .preview-card {
+        overflow: hidden;
+        text-align: center;
+    }
+    .preview-header {
+        height: 100px;
+        background: linear-gradient(135deg, var(--primary-color), #8b5cf6);
+    }
+    .preview-avatar {
+        width: 80px;
+        height: 80px;
+        margin: -40px auto 0;
+        background-color: var(--surface-color);
+        color: var(--primary-color);
+        border: 4px solid var(--surface-color);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: 700;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .preview-body {
+        padding: 1.5rem;
+    }
+    .preview-name {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        margin-bottom: 0.25rem;
+    }
+    .preview-role {
+        font-size: 0.9rem;
+        color: var(--primary-color);
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+    }
+    .preview-details {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        text-align: left;
+        background-color: var(--bg-color);
+        padding: 1rem;
+        border-radius: 0.75rem;
+    }
+    .preview-item {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-size: 0.875rem;
+        color: var(--text-secondary);
+    }
+    .hint-card {
+        padding: 1.25rem;
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        background-color: rgba(59, 130, 246, 0.05);
+        border-color: rgba(59, 130, 246, 0.2);
+    }
+    .hint-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        color: var(--primary-color);
+        flex-shrink: 0;
+    }
+    .hint-card strong {
+        display: block;
+        color: var(--primary-color);
+        margin-bottom: 0.25rem;
+        font-size: 0.95rem;
+    }
+    .hint-card p {
+        color: var(--text-secondary);
+        font-size: 0.85rem;
+        line-height: 1.5;
+        margin: 0;
+    }
+    .hint-card code {
+        background-color: rgba(59, 130, 246, 0.1);
+        padding: 0.1rem 0.3rem;
+        border-radius: 0.25rem;
+        color: var(--primary-color);
+    }
+</style>
