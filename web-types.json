@@ -1,0 +1,1542 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JetBrains/web-types/master/schema/web-types.json",
+  "name": "okjs",
+  "version": "1.2.0",
+  "description": "JetBrains HTML metadata for OK.js primitives, toolkit components, and app-local OK components.",
+  "contributions": {
+    "html": {
+      "elements": [
+        {
+          "name": "app-ok",
+          "description": "OK.js component from apps/site-2/app.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./apps/site-2/app.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "async",
+          "description": "OK.js component from toolkit/behavior/async.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/behavior/async.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "component",
+          "description": "OK.js component from src/primitives/component.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./src/primitives/component.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "components-page",
+          "description": "OK.js component from apps/site-2/pages/components.ok.html",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./apps/site-2/pages/components.ok.html",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "console",
+          "description": "OK.js component from toolkit/devtools/ok-console.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/devtools/ok-console.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "console-service",
+          "description": "OK.js component from toolkit/devtools/ok-console-service.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/devtools/ok-console-service.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "context",
+          "description": "OK.js component from src/primitives/context.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./src/primitives/context.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "crash-boundary",
+          "description": "OK.js component from src/primitives/crash-boundary.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./src/primitives/crash-boundary.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "crash-boundary-default",
+          "description": "OK.js component from src/primitives/crash-boundary-default.ok.js",
+          "attributes": [
+            {
+              "name": "error"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./src/primitives/crash-boundary-default.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "crash-fatal",
+          "description": "OK.js component from src/primitives/crash-fatal.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./src/primitives/crash-fatal.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "crash-service",
+          "description": "OK.js component from src/primitives/crash-service.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./src/primitives/crash-service.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "doc-viewer",
+          "description": "OK.js component from toolkit/docs/doc-viewer.ok.js",
+          "attributes": [
+            {
+              "name": "anchor"
+            },
+            {
+              "name": "file"
+            },
+            {
+              "name": "root"
+            },
+            {
+              "name": "prefix"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/docs/doc-viewer.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "docs-page",
+          "description": "OK.js component from apps/site-2/pages/docs.ok.html",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./apps/site-2/pages/docs.ok.html",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "each",
+          "description": "OK.js component from src/primitives/each.ok.js",
+          "attributes": [
+            {
+              "name": "of"
+            },
+            {
+              "name": "let:items"
+            },
+            {
+              "name": "let:item"
+            },
+            {
+              "name": "let:key"
+            },
+            {
+              "name": "let:index"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./src/primitives/each.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "file-editor",
+          "description": "OK.js component from apps/live-editor/__ok/components/file-editor.ok.js",
+          "attributes": [
+            {
+              "name": "projectVM"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./apps/live-editor/__ok/components/file-editor.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "file-editor-ok-html",
+          "description": "OK.js component referenced as a dependency by <file-editor>",
+          "attributes": []
+        },
+        {
+          "name": "file-explorer",
+          "description": "OK.js component referenced as a dependency by <ok-editor>",
+          "attributes": []
+        },
+        {
+          "name": "fragment",
+          "description": "OK.js component from src/primitives/fragment.ok.js",
+          "attributes": [
+            {
+              "name": "context"
+            },
+            {
+              "name": "nodes"
+            },
+            {
+              "name": "noInit"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./src/primitives/fragment.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "fundamentals-page",
+          "description": "OK.js component from apps/site-2/pages/fundamentals.ok.html",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./apps/site-2/pages/fundamentals.ok.html",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "getting-started-page",
+          "description": "OK.js component from apps/site-2/pages/getting-started.ok.html",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./apps/site-2/pages/getting-started.ok.html",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "hash-router",
+          "description": "OK.js component from toolkit/navigation/hash-router.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/navigation/hash-router.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "hello-card",
+          "description": "OK.js component referenced as a dependency by <highlight-test>",
+          "attributes": []
+        },
+        {
+          "name": "highlight-test",
+          "description": "OK.js component from dev/ide/highlight-test.ok.html",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./dev/ide/highlight-test.ok.html",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "highlight-test-js",
+          "description": "OK.js component from dev/ide/highlight-test.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./dev/ide/highlight-test.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "history-router",
+          "description": "OK.js component from toolkit/navigation/history-router.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/navigation/history-router.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "home-page",
+          "description": "OK.js component from apps/site-2/pages/home.ok.html",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./apps/site-2/pages/home.ok.html",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "i18n-editor",
+          "description": "OK.js component from toolkit/i18n/i18n-editor.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/i18n/i18n-editor.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "i18n-editor-examples",
+          "description": "OK.js component from toolkit/i18n/i18n-editor-examples.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/i18n/i18n-editor-examples.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "i18n-key-editor",
+          "description": "OK.js component from toolkit/i18n/i18n-key-editor.ok.js",
+          "attributes": [
+            {
+              "name": "value"
+            },
+            {
+              "name": "default"
+            },
+            {
+              "name": "keyName"
+            },
+            {
+              "name": "defaultLang"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/i18n/i18n-key-editor.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "i18n-key-editor-tips",
+          "description": "OK.js component from toolkit/i18n/i18n-key-editor-tips.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/i18n/i18n-key-editor-tips.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "i18n-service",
+          "description": "OK.js component from toolkit/i18n/i18n-service.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/i18n/i18n-service.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "if",
+          "description": "OK.js component from src/primitives/if.ok.js",
+          "attributes": [
+            {
+              "name": "if"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./src/primitives/if.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-chart",
+          "description": "OK.js component from toolkit/components/ok-chart.ok.js",
+          "attributes": [
+            {
+              "name": "type"
+            },
+            {
+              "name": "data"
+            },
+            {
+              "name": "options"
+            },
+            {
+              "name": "autoColor"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/components/ok-chart.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-component-preview",
+          "description": "OK.js component from apps/live-editor/__ok/components/ok-component-preview.ok.js",
+          "attributes": [
+            {
+              "name": "url"
+            },
+            {
+              "name": "crash"
+            },
+            {
+              "name": "env"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./apps/live-editor/__ok/components/ok-component-preview.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-contextmenu",
+          "description": "OK.js component from toolkit/interaction/ok-contextmenu.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/interaction/ok-contextmenu.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-crash-boundary",
+          "description": "OK.js component from toolkit/errors/ok-crash-boundary.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/errors/ok-crash-boundary.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-crash-info",
+          "description": "OK.js component from toolkit/errors/ok-crash-info.ok.js",
+          "attributes": [
+            {
+              "name": "noClose"
+            },
+            {
+              "name": "error"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/errors/ok-crash-info.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-dependency-editor",
+          "description": "OK.js component referenced as a dependency by <ok-editor-ok-html>",
+          "attributes": []
+        },
+        {
+          "name": "ok-design",
+          "description": "OK.js component from toolkit/theming/ok-design.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/theming/ok-design.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-doc-viewer",
+          "description": "OK.js component from toolkit/components/ok-doc-viewer.ok.js",
+          "attributes": [
+            {
+              "name": "anchor"
+            },
+            {
+              "name": "file"
+            },
+            {
+              "name": "root"
+            },
+            {
+              "name": "prefix"
+            },
+            {
+              "name": "blocks"
+            },
+            {
+              "name": "codeBlock"
+            },
+            {
+              "name": "preprocess"
+            },
+            {
+              "name": "postprocess"
+            },
+            {
+              "name": "noDefaultBlocks"
+            },
+            {
+              "name": "headingLevels"
+            },
+            {
+              "name": "sidebarTitle"
+            },
+            {
+              "name": "scrollOffset"
+            },
+            {
+              "name": "iconSet"
+            },
+            {
+              "name": "manifest"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/components/ok-doc-viewer.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-draggable",
+          "description": "OK.js component from toolkit/interaction/ok-draggable.ok.js",
+          "attributes": [
+            {
+              "name": "handle"
+            },
+            {
+              "name": "noDrag"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/interaction/ok-draggable.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-dropdown",
+          "description": "OK.js component from toolkit/elements/ok-dropdown.ok.js",
+          "attributes": [
+            {
+              "name": "open"
+            },
+            {
+              "name": "title"
+            },
+            {
+              "name": "noCaret"
+            },
+            {
+              "name": "placement"
+            },
+            {
+              "name": "noKeyboard"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/elements/ok-dropdown.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-dropzone",
+          "description": "OK.js component from apps/live-editor/__ok/components/files-dropzone.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./apps/live-editor/__ok/components/files-dropzone.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-editor",
+          "description": "OK.js component from apps/live-editor/__ok/components/ok-editor.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./apps/live-editor/__ok/components/ok-editor.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-editor-ok-html",
+          "description": "OK.js component from apps/live-editor/__ok/components/file-editor-ok-html.ok.js",
+          "attributes": [
+            {
+              "name": "text"
+            },
+            {
+              "name": "path"
+            },
+            {
+              "name": "projectVM"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./apps/live-editor/__ok/components/file-editor-ok-html.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-dismiss-service",
+          "description": "OK.js component from toolkit/interaction/ok-dismiss-service.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/interaction/ok-dismiss-service.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-flyover",
+          "description": "OK.js component from toolkit/interaction/ok-flyover.ok.js",
+          "attributes": [
+            {
+              "name": "open"
+            },
+            {
+              "name": "anchor"
+            },
+            {
+              "name": "placement"
+            },
+            {
+              "name": "gap"
+            },
+            {
+              "name": "portal"
+            },
+            {
+              "name": "outside-action"
+            },
+            {
+              "name": "layer"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/interaction/ok-flyover.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-fps-monitor",
+          "description": "OK.js component from toolkit/devtools/ok-fps-monitor.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/devtools/ok-fps-monitor.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-fps-monitor-service",
+          "description": "OK.js component from toolkit/devtools/ok-fps-monitor-service.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/devtools/ok-fps-monitor-service.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-highlight",
+          "description": "OK.js component from toolkit/interaction/ok-highlight.ok.js",
+          "attributes": [
+            {
+              "name": "options"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/interaction/ok-highlight.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-highlight-service",
+          "description": "OK.js component from toolkit/interaction/ok-highlight-service.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/interaction/ok-highlight-service.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-hotkeys-service",
+          "description": "OK.js component from toolkit/interaction/ok-hotkeys-service.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/interaction/ok-hotkeys-service.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-icon",
+          "description": "OK.js component from toolkit/elements/ok-icon.ok.js",
+          "attributes": [
+            {
+              "name": "name"
+            },
+            {
+              "name": "set"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/elements/ok-icon.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-inspector",
+          "description": "OK.js component from toolkit/devtools/ok-inspector.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/devtools/ok-inspector.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-inspector-service",
+          "description": "OK.js component from toolkit/devtools/ok-inspector-service.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/devtools/ok-inspector-service.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-js-tree",
+          "description": "OK.js component from toolkit/devtools/ok-js-tree.ok.js",
+          "attributes": [
+            {
+              "name": "key"
+            },
+            {
+              "name": "parent"
+            },
+            {
+              "name": "editable"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/devtools/ok-js-tree.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-live-component",
+          "description": "OK.js component from toolkit/editor/ok-live-component.ok.js",
+          "attributes": [
+            {
+              "name": "tag"
+            },
+            {
+              "name": "def"
+            },
+            {
+              "name": "usage"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/editor/ok-live-component.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-live-example",
+          "description": "OK.js component from toolkit/editor/ok-live-example.ok.js",
+          "attributes": [
+            {
+              "name": "tag"
+            },
+            {
+              "name": "html"
+            },
+            {
+              "name": "context"
+            },
+            {
+              "name": "css"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/editor/ok-live-example.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-live-shell",
+          "description": "OK.js component from toolkit/editor/ok-live-shell.ok.js",
+          "attributes": [
+            {
+              "name": "noResizeHeight"
+            },
+            {
+              "name": "filename"
+            },
+            {
+              "name": "monaco"
+            },
+            {
+              "name": "tabs"
+            },
+            {
+              "name": "render"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/editor/ok-live-shell.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-marked",
+          "description": "OK.js component from toolkit/components/ok-marked.ok.js",
+          "attributes": [
+            {
+              "name": "src"
+            },
+            {
+              "name": "text"
+            },
+            {
+              "name": "map"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/components/ok-marked.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-layer",
+          "description": "OK.js component from toolkit/core/ok-layer.ok.js",
+          "attributes": [
+            {
+              "name": "type"
+            },
+            {
+              "name": "tier"
+            },
+            {
+              "name": "order"
+            },
+            {
+              "name": "portal"
+            },
+            {
+              "name": "owner"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/core/ok-layer.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-modal",
+          "description": "OK.js component from toolkit/modals/ok-modal.ok.js",
+          "attributes": [
+            {
+              "name": "noClose"
+            },
+            {
+              "name": "noFooter"
+            },
+            {
+              "name": "title"
+            },
+            {
+              "name": "portal"
+            },
+            {
+              "name": "layer"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/modals/ok-modal.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-modal-service",
+          "description": "OK.js component from toolkit/modals/ok-modal-service.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/modals/ok-modal-service.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-monaco",
+          "description": "OK.js component from toolkit/components/ok-monaco.ok.js",
+          "attributes": [
+            {
+              "name": "value"
+            },
+            {
+              "name": "language"
+            },
+            {
+              "name": "suggestions"
+            },
+            {
+              "name": "theme"
+            },
+            {
+              "name": "options"
+            },
+            {
+              "name": "autogrow"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/components/ok-monaco.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-neon-background",
+          "description": "OK.js component from apps/site-2/components/ok-neon-background.ok.js",
+          "attributes": [
+            {
+              "name": "intensity"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./apps/site-2/components/ok-neon-background.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-overlay",
+          "description": "OK.js component from toolkit/core/ok-overlay.ok.js",
+          "attributes": [
+            {
+              "name": "backdrop-action"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/core/ok-overlay.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-picker-service",
+          "description": "OK.js component from toolkit/interaction/ok-picker-service.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/interaction/ok-picker-service.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-popout",
+          "description": "OK.js component from toolkit/interaction/ok-popout.ok.js",
+          "attributes": [
+            {
+              "name": "noConfirm"
+            },
+            {
+              "name": "confirmText"
+            },
+            {
+              "name": "noRemove"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/interaction/ok-popout.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-resizer",
+          "description": "OK.js component from toolkit/layout/ok-resizer.ok.js",
+          "attributes": [
+            {
+              "name": "target"
+            },
+            {
+              "name": "direction"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/layout/ok-resizer.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-sandbox",
+          "description": "OK.js component from toolkit/core/ok-sandbox.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/core/ok-sandbox.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-select",
+          "description": "OK.js component from toolkit/elements/ok-select.ok.js",
+          "attributes": [
+            {
+              "name": "value"
+            },
+            {
+              "name": "options"
+            },
+            {
+              "name": "optionText"
+            },
+            {
+              "name": "optionValue"
+            },
+            {
+              "name": "placeholder"
+            },
+            {
+              "name": "noSearch"
+            },
+            {
+              "name": "placement"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/elements/ok-select.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-submenu",
+          "description": "OK.js component from toolkit/interaction/ok-submenu.ok.js",
+          "attributes": [
+            {
+              "name": "placement"
+            },
+            {
+              "name": "openOn"
+            },
+            {
+              "name": "openDelay"
+            },
+            {
+              "name": "closeDelay"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/interaction/ok-submenu.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-table",
+          "description": "OK.js component from toolkit/elements/ok-table.ok.js",
+          "attributes": [
+            {
+              "name": "data"
+            },
+            {
+              "name": "columns"
+            },
+            {
+              "name": "expand"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "selected"
+            },
+            {
+              "name": "expanded"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/elements/ok-table.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-theme",
+          "description": "OK.js component from toolkit/theming/ok-theme.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/theming/ok-theme.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-theme-editor",
+          "description": "OK.js component from toolkit/theming/ok-theme-editor/ok-theme-editor.ok.js",
+          "attributes": [
+            {
+              "name": "target"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/theming/ok-theme-editor/ok-theme-editor.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-theme-editor-input",
+          "description": "OK.js component from toolkit/theming/ok-theme-editor/ok-theme-editor-input.ok.js",
+          "attributes": [
+            {
+              "name": "value"
+            },
+            {
+              "name": "default"
+            },
+            {
+              "name": "type"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/theming/ok-theme-editor/ok-theme-editor-input.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-theme-editor-service",
+          "description": "OK.js component from toolkit/theming/ok-theme-editor/ok-theme-editor-service.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/theming/ok-theme-editor/ok-theme-editor-service.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-theme-editor-variable",
+          "description": "OK.js component from toolkit/theming/ok-theme-editor/ok-theme-editor-variable.ok.js",
+          "attributes": [
+            {
+              "name": "vm"
+            },
+            {
+              "name": "variable"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/theming/ok-theme-editor/ok-theme-editor-variable.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-timeline",
+          "description": "OK.js component from toolkit/devtools/ok-timeline.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/devtools/ok-timeline.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-timeline-service",
+          "description": "OK.js component from toolkit/devtools/ok-timeline-service.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/devtools/ok-timeline-service.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-toast-service",
+          "description": "OK.js component from toolkit/modals/ok-toast-service.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/modals/ok-toast-service.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "ok-window",
+          "description": "OK.js component from toolkit/modals/ok-window.ok.js",
+          "attributes": [
+            {
+              "name": "noClose"
+            },
+            {
+              "name": "noMaximize"
+            },
+            {
+              "name": "portal"
+            },
+            {
+              "name": "layer"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/modals/ok-window.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "primitives-page",
+          "description": "OK.js component from apps/site-2/pages/primitives.ok.html",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./apps/site-2/pages/primitives.ok.html",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "reactive-sync-service",
+          "description": "OK.js component from toolkit/sync/reactive-sync-service.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/sync/reactive-sync-service.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "repeat",
+          "description": "OK.js component from src/primitives/repeat.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./src/primitives/repeat.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "router",
+          "description": "OK.js component from toolkit/navigation/router.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./toolkit/navigation/router.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "routing-page",
+          "description": "OK.js component from apps/site-2/pages/routing.ok.html",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./apps/site-2/pages/routing.ok.html",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "shadow",
+          "description": "OK.js component from src/primitives/shadow.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./src/primitives/shadow.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "showcase-page",
+          "description": "OK.js component from apps/site-2/pages/showcase.ok.html",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./apps/site-2/pages/showcase.ok.html",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "singleton-service",
+          "description": "OK.js component from src/primitives/singleton-service.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./src/primitives/singleton-service.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "slot",
+          "description": "OK.js component from src/primitives/slot.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./src/primitives/slot.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "switch",
+          "description": "OK.js component from src/primitives/switch.ok.js",
+          "attributes": [
+            {
+              "name": "let:value"
+            },
+            {
+              "name": "value"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./src/primitives/switch.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "toolkit-page",
+          "description": "OK.js component from apps/site-2/pages/toolkit.ok.html",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./apps/site-2/pages/toolkit.ok.html",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "transition",
+          "description": "OK.js component from toolkit/core/transition.ok.js",
+          "attributes": [
+            {
+              "name": "noEnter"
+            },
+            {
+              "name": "noLeave"
+            },
+            {
+              "name": "disabled"
+            },
+            {
+              "name": "name"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/core/transition.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "transitions-page",
+          "description": "OK.js component from apps/site-2/pages/transitions.ok.html",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./apps/site-2/pages/transitions.ok.html",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "var",
+          "description": "OK.js component from src/primitives/var.ok.js",
+          "attributes": [],
+          "js": {
+            "source": {
+              "module": "./src/primitives/var.ok.js",
+              "symbol": "default"
+            }
+          }
+        },
+        {
+          "name": "virtualized",
+          "description": "OK.js component from toolkit/core/virtualized.ok.js",
+          "attributes": [
+            {
+              "name": "items"
+            }
+          ],
+          "js": {
+            "source": {
+              "module": "./toolkit/core/virtualized.ok.js",
+              "symbol": "default"
+            }
+          }
+        }
+      ],
+      "attributes": [
+        {
+          "name": "ok-one-way-binding",
+          "pattern": {
+            "regex": "^:[-\\w.:@]+"
+          },
+          "description": "OK.js one-way binding — value is evaluated as a JS expression and reactively applied to the property/attribute."
+        },
+        {
+          "name": "ok-two-way-binding",
+          "pattern": {
+            "regex": "^![-\\w.:]+"
+          },
+          "description": "OK.js two-way binding — creates a bidirectional reactive link between the expression and the element property."
+        },
+        {
+          "name": "ok-event-handler",
+          "pattern": {
+            "regex": "^@[-\\w.]+(?::[-\\w.]+)*"
+          },
+          "description": "OK.js event handler — value is a JS expression executed when the event fires. Append :prevent, :stop, :once, etc. as modifiers."
+        },
+        {
+          "name": "ok-let-binding",
+          "pattern": {
+            "regex": "^let:[-\\w]+"
+          },
+          "description": "OK.js let-binding — exposes a named variable from the enclosing component primitive into the inner scope."
+        },
+        {
+          "name": "ok-spread-binding",
+          "pattern": {
+            "regex": "^\\.\\.\\.[-\\w]+"
+          },
+          "description": "OK.js spread binding — spreads an object of attributes onto the element."
+        }
+      ]
+    }
+  }
+}
