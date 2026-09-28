@@ -1,0 +1,43 @@
+[
+  {
+    "label": "Home",
+    "file": "README.md"
+  },
+  {
+    "label": "Getting Started",
+    "file": "getting-started.md"
+  },
+  {
+    "label": "Fundamentals",
+    "file": "fundamentals/README.md",
+    "children": [
+      { "label": "Bindings", "file": "fundamentals/bindings.md" },
+      { "label": "Context", "file": "fundamentals/context.md" },
+      { "label": "Expressions", "file": "fundamentals/expressions.md" },
+      { "label": "Reactivity Model", "file": "fundamentals/reactivity-model.md" },
+      { "label": "Scopes", "file": "fundamentals/scopes.md" },
+      { "label": "Special Vars", "file": "fundamentals/special-vars.md" },
+      { "label": "Ok DOM", "file": "fundamentals/ok-dom.md" },
+      { "label": "Text Interpolation", "file": "fundamentals/text-interpolation.md" }
+    ]
+  },
+  {
+    "label": "Primitives",
+    "file": "primitives/README.md",
+    "folder": "primitives",
+    "children": [
+      { "label": "var", "file": "primitives/var.md" },
+      { "label": "context", "file": "primitives/context.md" },
+      { "label": "each", "file": "primitives/each.md" }
+    ]
+  },
+  {
+    "label": "Advanced",
+    "folder": "advanced",
+    "file": "advanced/README.md",
+    "children": [
+      { "label": "Template Compilation", "file": "advanced/template-compilation.md" },
+      { "label": "Flush Cycle", "file": "advanced/flush-cycle.md" }
+    ]
+  }
+]
