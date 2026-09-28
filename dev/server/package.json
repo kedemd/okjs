@@ -1,0 +1,20 @@
+{
+  "name": "@ok-go/server",
+  "version": "1.2.0",
+  "type": "module",
+  "private": true,
+  "description": "OK.js development server - serves apps with HMR, SSG, and on-the-fly JS/CSS/HTML transforms.",
+  "scripts": {
+    "ssg:build": "node ssg-demo/build.js",
+    "ssg:smoke": "node ssg-demo/smoke.js",
+    "smoke:hmr": "node testing/live-server.smoke.js",
+    "smoke:embed": "node testing/okjs-server.smoke.js",
+    "smoke:ssg": "node testing/ssg-server.smoke.js",
+    "validate": "node testing/validate-structure.js"
+  },
+  "dependencies": {
+    "csso": "^5.0.5",
+    "esbuild": "^0.25.4",
+    "html-minifier-terser": "^7.2.0"
+  }
+}

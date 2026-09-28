@@ -1,0 +1,63 @@
+<script type="module">
+    export default {
+        tag: 'counter',
+        context() {
+            return { count: 0 };
+        },
+    };
+</script>
+
+<template>
+    <div class="counter">
+        <button class="counter-btn" @click="count--" :disabled="count <= 0" title="Decrease">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+        <span class="counter-val">{{ count }}</span>
+        <button class="counter-btn" @click="count++" title="Increase">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+    </div>
+</template>
+
+<style>
+    .counter {
+        display: inline-flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.5rem;
+        background: var(--surface-color);
+        border-radius: 0.75rem;
+        border: 1px solid var(--border-color);
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    }
+    .counter-btn {
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 1px solid var(--border-color);
+        background: var(--surface-color);
+        color: var(--text-primary);
+        border-radius: 0.5rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s;
+    }
+    .counter-btn:hover:not(:disabled) {
+        background: var(--bg-color);
+        border-color: var(--text-secondary);
+    }
+    .counter-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+    .counter-val {
+        font-size: 1.5rem;
+        font-weight: 600;
+        min-width: 2rem;
+        text-align: center;
+        color: var(--text-primary);
+        font-variant-numeric: tabular-nums;
+    }
+</style>
+
